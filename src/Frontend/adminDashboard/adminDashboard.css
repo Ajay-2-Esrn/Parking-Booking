@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+.admin-dashboard {
+    min-height: 100vh;
+    background: #f6f4f0;
+    color: #29251f;
+    font-family: Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+.admin-header {
+    background: #30251f;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.admin-header p {
+    margin: 6px 0 0;
+    color: #e3c99b;
+    font-size: 14px;
+}
+
+.admin-badge {
+    background: #e5bd77;
+    color: #30251f;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+table td{
+    text-align: left;
+}
+table th{
+    text-align: center;
+}
+#removeParking{
+    padding:8px 30px;
+    border: 2px solid transparent;
+    background-color: #e3c99b;
+    border-radius: 8px;
+}
+#removeParking:hover{
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid #e5bd77
+}

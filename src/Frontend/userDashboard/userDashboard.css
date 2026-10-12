@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.user-dashboard {
+    min-height: 100vh;
+    background: #f6f4f0;
+    color: #29251f;
+    font-family: Arial, sans-serif;
+}
+
+.user-header {
+    background: #30251f;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-header p {
+    margin: 6px 0 0;
+    color: #e3c99b;
+    font-size: 14px;
+}
+
+.user-badge {
+    background: #e5bd77;
+    color: #30251f;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.user-main {
+    width: min(750px, 92%);
+    margin: 35px auto;
+}
+
+.user-welcome {
+    margin-bottom: 24px;
+}
+
+.user-welcome h2 {
+    margin-bottom: 8px;
+    font-size: 27px;
+}
+
+.user-welcome p {
+    color: #716b63;
+}
+
+.parking-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.parking-card h2 {
+    margin: 0 0 8px;
+}
+
+.parking-description {
+    color: #777;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+    flex: 1;
+    min-width: 0;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6d0c7;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #ad7c32;
+    box-shadow: 0 0 0 2px rgba(173, 124, 50, 0.12);
+}
+
+.time-row {
+    display: flex;
+    gap: 18px;
+}
+
+.parking-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #a8752b;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.parking-submit:hover {
+    background: #80551e;
+}
+
+.user-footer {
+    text-align: center;
+    padding: 22px;
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 550px) {
+    .user-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .parking-card {
+        padding: 20px;
+    }
+
+    .time-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+#logoutBtn{
+    padding:10px 30px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #E5BD77;
+    transition: all 0.1s ease;
+}
+#logoutBtn:hover{
+    background-color: white;
+    transform: scale(1.1);
+}

@@ -1,0 +1,285 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f5f8;
+  color: #172b49;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+.header {
+  background: #14263f;
+  color: #f5cc70;
+  padding: 22px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand-icon {
+  font-size: 48px;
+}
+
+.brand h1 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+}
+
+.brand p {
+  color: #e1e5ec;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 6px;
+}
+
+.tagline {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* Main content */
+
+.main-content {
+  flex: 1;
+  padding: 45px 20px 60px;
+  background: linear-gradient(135deg, #e8edf5, #fdf7e9);
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.crown {
+  font-size: 36px;
+  color: #c4932e;
+}
+
+.welcome > p:first-of-type {
+  margin-top: 8px;
+  letter-spacing: 3px;
+  color: #53647b;
+}
+
+.welcome h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 4vw, 45px);
+  color: #bd8a28;
+  margin: 10px 0;
+}
+
+.welcome .description {
+  color: #53647b;
+  font-size: 17px;
+}
+
+/* Navigation tabs */
+
+.form-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px auto 22px;
+}
+
+.form-tabs button {
+  padding: 13px 22px;
+  border: 1px solid #d5dce7;
+  border-radius: 8px;
+  background: white;
+  color: #243957;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-tabs button:hover,
+.form-tabs button.active {
+  background: #142f52;
+  color: #f5cc70;
+  border-color: #142f52;
+}
+
+/* Form card */
+
+.form-card {
+  background: white;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 30px #172b4915;
+  border-top: 4px solid #d2a342;
+}
+
+.form-icon {
+  background: #edf1f8;
+  color: #bd8a28;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 15px;
+  font-size: 30px;
+}
+
+.form-card h2 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  margin-bottom: 9px;
+}
+
+.form-card > p {
+  color: #68758a;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d4dbe6;
+  border-radius: 7px;
+  outline: none;
+  background: #fcfdff;
+}
+
+.form-card input:focus {
+  border-color: #bd8a28;
+  box-shadow: 0 0 0 3px #bd8a281c;
+}
+
+.submit-btn {
+  padding: 14px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 7px;
+  background: #183453;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #bd8a28;
+  color: #172b49;
+}
+
+.form-card .form-footer {
+  margin: 22px 0 0;
+  color: #53647b;
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  color: #bd8a28;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.text-btn:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+  background: #14263f;
+  color: #e1e5ec;
+  text-align: center;
+  padding: 24px 15px;
+}
+
+.footer h3 {
+  font-family: Georgia, serif;
+  color: #f5cc70;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.footer small {
+  color: #aebbd0;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .brand h1 {
+    font-size: 25px;
+  }
+
+  .brand p {
+    letter-spacing: 2px;
+  }
+
+  .tagline {
+    font-size: 17px;
+  }
+
+  .main-content {
+    padding: 35px 15px 45px;
+  }
+
+  .form-tabs {
+    flex-direction: column;
+    max-width: 430px;
+  }
+
+  .form-tabs button {
+    width: 100%;
+  }
+
+  .form-card {
+    padding: 25px 20px;
+  }
+}
